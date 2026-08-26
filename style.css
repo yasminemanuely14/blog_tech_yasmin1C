@@ -1,5 +1,13 @@
+ody {
+    font-family: Arial, Helvetica, sans-serif; /* fonte universal herdada por todo site */
+    margin: 0;                                 /* remove margins normal do computador */
+    padding: 0;
+}
+
+
+
 header {
-    background-color: rgb(86, 27, 141); /* cor de fundo */
+    background-color: rgb(25, 122, 66); /* cor de fundo */
     color: antiquewhite; /* cor da fonte */
     text-align: center; /* centraliza o texto horizontalmente */
     max-width: 800px; /* define a largura máxima que o elemento pode ter */
@@ -8,26 +16,45 @@ header {
 }
 
 h1{
-    color: #3f3679;
+    color: #0e793e;
 }
 
 main {
-    background-color: aliceblue;
-    color: #ff05d5;
+    background-color: rgb(34, 92, 39);
+    color: #24a066;
     max-width: 800px;
     margin: 0 auto;
     padding: 16px;
-    display: flex; /* ativa o flebox para alinhar os elementos filhos lado a lado */
+}
+
+article {
+    display: flex;
+    margin-bottom: 60px; /* empurra o artigo de baixo, criando o espaço */
 }
 
 img{
     width: 150px; /* define a largura fixa da imagem */
     height: 150px; /* define a largura fixa da imagem */
-    border: 2px solid #17048f; /* adiciona uma borda sólida de 2px na cor azul/roxa */
+    border: 2px solid #21a378; /* adiciona uma borda sólida de 2px na cor azul/roxa */
     display: block; /* transforma a imagem em um bloco para aceitar margens verticais e quebra de linha */
     margin: 0 auto; /* centraliza a imagem horizontalmente na tela */
+    align-self: center;
 }
 
 .artigo-autor {
     font-weight: bold; /* deixa o texto em negrito */
+}
+
+.texto-curto {
+    max-width: 65ch; /* limita a linha a cerca de 45 caracteres*/
+}
+
+footer {
+    background-color: #32e2b6; /* mesma cor escura do header para combinar */
+    color: antiquewhite;      /* cor da fonte branca para dar contraste e leitura */
+    text-align: center;        /* centraliza o texto horizontalmente */
+    max-width: 800px;         /* mantém o msm alinhamento do header e do main */
+    margin: 0 auto;          /* centraliza o bloco inteiro na tela */
+    padding: 20px;          /* cria um espaçamento inteiro para o fundo aparecer bem */
+    font-size: 14px; /* deixa o texto do rodapé um pouco menor e descreto */ 
 }
